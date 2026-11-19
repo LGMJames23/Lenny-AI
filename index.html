@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"><!--Setting the Characters to browser-default-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Makes the page scale to the device-->
     <title>Lenny AI</title>
-    <script src="main.js" defer>
-      <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <main id="app-container">
-      <section id="user-input" aria-labelledby="user-input">
-        <article class="user-interface">
-        <button id="clear">Clear</button>
-          <button id="predict">Make Lenny Guess</button>
-        </article>
-        <canvas id="user-canvas"></canvas>
-    </section>
-  </main>
- </body>
+    <main id="app-container"><!--Unique page content(once-per-page due to screen-readers)-->
+      <article id="user-input" aria-label="Drawing input">
+        <section class="user-interface">
+          <button type="button" id="clear">Clear</button>
+          <button type="button" id="predict">Make Lenny Guess</button>
+        </section>
+        <canvas id="user-canvas" aria-label="Drawing canvas"></canvas>
+      </article>
+      <aside class="nav-bar">
+   <button id="settings" type="button" aria-label="Settings">
+  <img
+    src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915'/%3E%3Ccircle cx='12' cy='12' r='3'/%3E%3C/svg%3E"
+    width="24"
+    height="24"
+    aria-hidden="true"
+    alt="settings"
+  />
+</button>
+      </aside>
+      <
+    </main>
+  </body>
+</html>
